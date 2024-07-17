@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>aula5</title>
+    <link rel="stylesheet" href="../_css/estilo.css">
+</head>
+
+<body>
+    <div>
+        <h1>Testando PHP </h1>
+        <!--
+        <form method="get" action="01valor.php">
+            valor:
+            <input type="number" name="v" />
+            <input type="submit" value="Calcular Raiz" />
+
+        </form>
+-->
+        <!--
+        <form method="get" action=" 01valor.php">
+
+            Nome:
+            <input type="text" name="nome" />
+            <br/> Ano de Nascimento:
+            <input type="number" name="ano" />
+            <br>
+            <fieldset>
+                <legend>Sexo</legend>
+
+                <input type="radio" name="sexo" id="masc" value="homem" checked>
+                <label for="masc">Masculino</label>
+                <br>
+
+                <input type="radio" name="sexo" id="fem" value="mulher">
+                <label for="fem">Feminino</label>
+                <br>
+            </fieldset>
+            <input type="submit" value="Enviar" />
+
+        </form>
+-->
+        <form method="get" action="01valor.php">
+            <label for="itxt">Texto:</label>
+            <input type=text name=t id="itxt" />
+            <br>
+            <label for="itam">Tamanho:</label>
+            <select name="tam" id="itam">
+                <option value="8pt">8</option>
+                <option value="10pt">10</option>
+                <option value="14pt" selected>14</option>
+                <option value="20pt">20</option>
+                <option value="40pt">40</option>
+
+            </select>
+            <br>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" />
+            <br>
+            <input type="submit" value="Gerar" />
+        </form>
+
+        <?php
+        
+        
+        
+        
+        ?>
+
+
+    </div>
+</body>
+
+</html>
+<!--
+Interligando o formulário HTML com o script PHP
+
+Para interligar o formulário, vamos usar a cláusula $_GET
+
+?php
+$valor = $_GET[“v”];
+echo “Digitou $valor”;
+?
+
+Obs: O $_GET sempre vai utilizar todas as letras maiúsculas.
+Obs: Se por acaso seu formulário utilizar o método post, você vai precisar usar $_POST.
+
+Interligando outros tipos de controles de formulários HTML5 com PHP
+
+A integração de qualquer controle de formulário PHP pode ser feita através do parâmetro NAME de cada um deles. Durante a aula, criamos um formulário com vários tipos de controles e interligamos eles ao arquivo PHP.
+
+Pegando o ano atual com PHP
+
+Para obter o ano atual no PHP, utilizamos
+
+$idade = date(“Y”) - $ano; 
+
+-->
